@@ -118,13 +118,13 @@ a{
 .navegacion .navegacionDerecha li:nth-child(1),
 .navegacion .navegacionDerecha li:nth-child(4)
 {
-    width: 5px;
+    width: 40px;
     
 }
 .user{
     width: 70%;
     height: 70%;
-    border-radius: 10px;
+    border-radius: 6px;
     overflow: hidden;
 }
 .navegacion .navegacionDerecha li:nth-child(1),
