@@ -56,7 +56,7 @@ a{
     align-items: center;
     justify-content: space-between;
     gap: 5px;
-    font-size: 25px;
+    font-size: 15px;
 }
 
 .navegacion{
@@ -64,10 +64,10 @@ a{
     display: flex;
     align-items: center;
     gap: 5px;
-    font-size: 25px;
+    font-size: 15px;
 }
 
-@media (max-width: 400px){
+@media (min-width: 350px){
     .navegacion{
         gap: 18px;
     }
@@ -75,17 +75,20 @@ a{
 /* Menu izquierda*/
 
 .logo{
-    width: 300px;
+    width: 280px;
     height: 80px;
 }
-@media (max-width: 700px){
+@media (min-width: 700px){
     .logo{
-        width: 110px;
-        height: 60px;
+        width: 260px;
+        height: 80px;
     }
 }
 
-@media (max-width: 1000px){
+
+/* Estos estilos se hacen para los disposivos con tamaño pequeña de pantalla, para todo el contenido
+no se acumule en le pantalla*/
+@media (min-width: 900px){
     .navegacion .navegacionIzquierda li:nth-child(2){
         display: none;
     }
@@ -100,49 +103,53 @@ a{
 }
 
 @media (min-width: 1000px){
-    .navegacion .navegacionIzquierda li:nth-child(2){
-        display: none;
+    .navegacion .navegacionIzquierda li:nth-child(3)
+    .navegacion .navegacionIzquierda li:nth-child(4),
+    .navegacion .navegacionIzquierda li:nth-child(5),
+    .navegacion .navegacionIzquierda li:nth-child(6),
+    .navegacion .navegacionIzquierda li:nth-child(7),
+    .navegacion .navegacionIzquierda li:nth-child(8){
+        display: flex;
     }
-}
-.navegacion .navegacionIzquierda li:nth-child(3)
-.navegacion .navegacionIzquierda li:nth-child(4),
-.navegacion .navegacionIzquierda li:nth-child(5),
-.navegacion .navegacionIzquierda li:nth-child(6),
-.navegacion .navegacionIzquierda li:nth-child(7),
-.navegacion .navegacionIzquierda li:nth-child(8),
-.navegacion .navegacionIzquierda li:nth-child(9){
-    display: flex;
+    
 }
 
 /*  Menu derecha */
-.navegacion .navegacionDerecha li:nth-child(1),
-.navegacion .navegacionDerecha li:nth-child(4)
-{
-    width: 40px;
-    
+
+.logoNav{
+    width:40px;
+    height:40px;
+    overflow: hidden;
 }
 .user{
-    width: 70%;
-    height: 70%;
-    border-radius: 6px;
+    
+    width:60px;
+    height: 60px;
+    border-radius: 10px;
     overflow: hidden;
 }
 .navegacion .navegacionDerecha li:nth-child(1),
 .navegacion .navegacionDerecha li:nth-child(2),
 .navegacion .navegacionDerecha li:nth-child(3),
-.navegacion .navegacionDerecha li:nth-child(4){
+.navegacion .navegacionDerecha li:nth-child(4),
+.navegacion .navegacionDerecha li:nth-child(5),
+.navegacion .navegacionDerecha li:nth-child(6){
     display: none;
 }
 
-@media (min-width: 300px){
+/*La campana y la lupa de navegación
+@media (min-width:350px){
     .navegacion .navegacionDerecha li:nth-child(1),
-    .navegacion .navegacionDerecha li:nth-child(4){
+    .navegacion .navegacionDerecha li:nth-child(5){
         display: flex;
     }
 }
+*/
 @media (min-width: 1000){
     .navegacion .navegacionDerecha li:nth-child(2),
-    .navegacion .navegacionDerecha li:nth-child(3){
+    .navegacion .navegacionDerecha li:nth-child(3),
+    .navegacion .navegacionDerecha li:nth-child(4),
+    .navegacion .navegacionDerecha li:nth-child(5){
         display: flex;
     }
 }
