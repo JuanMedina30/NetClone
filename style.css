@@ -257,3 +257,32 @@ no se acumule en le pantalla*/
        grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 }
+
+/*Peliculas y series*/
+.catalogo{
+    padding-block: 2px;
+    background-color: black;
+    color: white;
+}
+.seccionPeliculas, .seccionSeries, .seccionDocumentales, .seccionAnimes{
+   width: 95%;
+   margin-inline: auto;
+}
+.catalogo h2{
+    padding: 10px;
+}
+.catalogoVista{
+    display: flex;
+    overflow-x: scroll;
+    gap: 10px;
+    
+}
+.catalogoVista::-webkit-scrollbar{
+    width: 0;
+    height: 0;
+}
+.pelicula , .serie, .documental, .anime{
+    min-width: 300px;
+    height: auto;
+}
+
