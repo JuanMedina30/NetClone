@@ -1,5 +1,8 @@
 const urls=[
-    'https://api.themoviedb.org/3/1025a1be75d84fef0d03a055c9b1763e/eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIxMDI1YTFiZTc1ZDg0ZmVmMGQwM2EwNTVjOWIxNzYzZSIsInN1YiI6IjY1NTU0ZTRkZDRmZTA0MDEzOTgxZThhOSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.Ok0zZJ-amau5IpvHvijJNCnMAAVqFVYKl8lwgEz2El8/rated/movies'
+    'https://api.themoviedb.org/3/movie/550?api_key=1025a1be75d84fef0d03a055c9b1763e',
+    'https://api.themoviedb.org/3/discover/tv?api_key=1025a1be75d84fef0d03a055c9b1763e',
+    '',
+    ''
 ];
 
 window.addEventListener('DOMContentLoaded', ()=>{
